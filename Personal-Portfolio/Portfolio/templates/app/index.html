@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+  
+  <title>Amit-Portfolio</title>
+  
+  <link rel="shortcut icon" type="image/x-icon" href="{% static '/assets/img/icon.ico' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/themify-icons.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/bootstrap.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/vendor/animate/animate.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/vendor/owl-carousel/owl.carousel.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/vendor/nice-select/css/nice-select.css' %}">
+
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/vendor/fancybox/css/jquery.fancybox.min.css' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/virtual.css' %}?{% now 'U' %}">
+  
+  <link rel="stylesheet" type="text/css" href="{% static '/assets/css/minibar.virtual.css' %}?{% now 'U' %}">
+</head>
+<body class="theme-red">
+  
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+  
+  <!-- Setting button -->
+  {% comment %} <div class="config">
+    <div class="template-config">
+      <!-- Settings -->
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+      <!-- Puschase -->
+      <div class="d-block">
+        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template" data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+      </div>
+      <!-- Help -->
+      <div class="d-block">
+        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span class="ti-help"></span></a>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+      <select class="custom-select d-block my-2" id="change-page">
+        <option value="">Choose Page</option>
+        <option value="index">Topbar</option>
+        <option value="blog-topbar">Blog (Topbar)</option>
+        <option value="index-2">Minibar</option>
+        <option value="blog-minibar">Blog (Minibar)</option>
+      </select>
+    </div>
+  </div>
+   {% endcomment %}
+  <div class="topbar-nav fixed-top">
+    <div class="brand">
+      <img src="{% static '/assets/favicon.ico' %}" alt="" width="30" height="30">
+    </div>
+    <h3 class="ml-1">Portfolio</h3>
+    <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
+  </div>
+  
+  <!-- Minibar -->
+  <div class="minibar">
+    <div class="header">
+      <div class="brand">
+        
+      </div>
+    </div>
+    <div class="content">
+      <ul class="main-menu">
+        <li class="menu-item active">
+          <a href="#home" class="menu-link">
+            <span class="icon ti-home"></span>
+            <span class="caption">Home</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#about" class="menu-link">
+            <span class="icon ti-user"></span>
+            <span class="caption">About</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#services" class="menu-link">
+            <span class="icon ti-file"></span>
+            <span class="caption">Service</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#portfolio" class="menu-link">
+            <span class="icon ti-briefcase"></span>
+            <span class="caption">Projects</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#about" class="menu-link">
+            <span class="icon ti-book"></span>
+            <span class="caption">Resume</span>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a href="#contact" class="menu-link">
+            <span class="icon ti-location-pin"></span>
+            <span class="caption">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="vg-main-wrapper">
+    <div class="vg-page page-home" id="home" style="background-image: url({% static '/assets/img/bg_image_1.jpg' %});">
+      <div class="caption wow zoomInUp">
+        <h1 class="fw-normal">Welcome</h1>
+        <strong><h1 class="fw-medium fg-theme">Hi, I'm Amit Kumar</h1></strong>
+        <p class="tagline">Python/Django Developer at ScimoX Product and Services Pvt. Ltd.</p>
+      </div>
+    </div>
+    
+    <!-- Page About -->
+    
+    <div class="vg-page page-about" id="about">
+      <h1 class="text-center fg-dark wow fadeInUp">Career Objective</h1>
+      <hr>
+      <p><strong>
+        To be able to work in your organization as a Python Django Developer, where I can fully utilize my skills in HTML, CSS, Bootstrap, Python, and Django technologies. I have good knowledge about AWS Cloud Computing also Linux Operating system as well as Microsoft Server 2012R2, 2016 Datacenter, and GitHub also.<br><br>
+      </strong>
+        ➢ Good experience in developing web applications implementing Model View Control architecture using Django web application frameworks.<br>
+        ➢ Experienced in working with multi–Python Integrated Development Environments like PyCharm, Eclipse and Sublime Text.<br>
+        ➢ Expertise in development of web-based applications using Python, Django, HTML, CSS, Bootstrap5.<br>
+        ➢ Good knowledge on front end frame works like CSS Bootstrap.<br>
+        ➢ Knowledge in Object Oriented Analysis in developing server side and front-end framework using various design patterns.<br>
+        ➢ Experience in using version control systems like Bitbucket, Git, and GitHub.<br>
+        ➢ Good experience in working with Amazon Web Services like EC2, Virtual private cloud ( VPCs ), Storage models( EBS,S3,instance storage ), Elastic Load Balancers(ELBs .)<br>
+        ➢ Perform numerous server migrations on both Linux and Windows servers. Migrations include moving all clients and their data, configuration settings, testing and verifying.<br>
+        ➢ Experience on Linux based operating systems (used flavors like Debian, CentOS, Red Hat and Ubuntu). Linux Server deployment Web Servers on Cloud in Linux machine and Hosting/Virtual Hosting.<br>
+        ➢ Experience in working with different operating systems Windows 7/8/10/11/Win Server 2012R2/2016, Redhat, Linux.<br>
+        ➢ Good knowledge about Remote Desktop tool like – Any Desk, Tight-VNC Viewer, TeamViewer, Remote desktop tools.<br>
+      </p>
+      <div class="container mt-5">
+      
+      <!-- Profile -->
+      <div class="container py-3">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-place wow zoomIn">
+              <img src="{% static '/assets/img/1.jpeg' %}" alt="Photo Profile">
+            </div>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="caption wow fadeInRight">
+              <h3 class="fg-dark">AMIT KUMAR</h3>
+              <p class="fg-theme fw-medium">Python/Django Developer</p>
+              <p>My name is Amit Kumar, I'm belong from Basti district and my Qualification is BCA(Bachelor's in Computer Application) pursuing 2nd year
+                from Himalyan Garhwal University, Uttrakhand, it's going to complete in 2023.<br>
+                I am working with Scimox Product and Services Pvt. Ltd. as a Python/Django Developer, I have 1Year job experience in development field, and I have 2Year+ job experience<br>
+                as a Technical Support Engineer. 
+              </p>
+              <ul class="theme-list">
+                <li class="fg-dark"><b>Experience:</b> 1 Year</li>
+                <li class="fg-dark"><b>Lives In:</b> Lucknow- Uttar Pradesh, India</li>
+                <li class="fg-dark"><b>Age:</b> 22</li>
+                <li class="fg-dark"><b>Gender:</b> Male</li>
+              </ul>
+              <button class="btn btn-theme btn-rounded"><a href="https://www.naukri.com/Profile/download?" style="color:white;">Download CV</a></button>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End profile -->
+      <!-- Skills -->
+      <div class="container mt-5">
+        <h1 class="text-center fg-dark wow fadeInUp">My Skills</h1>
+        <div class="row py-3">
+          <div class="col-md-6">
+            <h4 class="wow fadeInUp">Coding skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Python</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Django</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">HTML + CSS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Bootstap</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h4 class="wow fadeInUp">OS & Cloud Skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Windows</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">92%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Linux</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width:80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">AWS Cloud Computing</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End skills -->
+      <!-- Resume -->
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-md-6 wow fadeInRight">
+            <h2 class="fg-dark">Education</h2>
+            <ul class="timeline mt-4 pr-md-5">
+              <li>
+                <div class="title">2019-2023</div>
+                <div class="details">
+                  <h5>Bachelor's in Computer Application</h5>
+                  <small class="fg-theme">Himalyan Garhwal University, Uttrakhand</small>
+                </div>
+              </li>
+              <li>
+                <div class="title">2019</div>
+                <div class="details">
+                  <h5>Computer Hardware & Networking Expert</h5>
+                  <small class="fg-theme">GT Infotech, Hussainganj Lucknow Uttar Pradesh</small>
+                </div>
+              </li>
+              <li>
+                <div class="title">2018</div>
+                <div class="details">
+                  <h5>Higher Secondery School</h5>
+                  <small class="fg-theme">R D U P A I C Basti Uttar Pradesh</small>
+                </div>
+              </li>
+              
+                <h2 class="fg-dark">Training & Certification</h2>
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>Python Training</h5>
+                      <small class="fg-theme">DataFlair Web Services</small>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>Python for Data Science</h5>
+                      <small class="fg-theme">IBM</small>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>Redhat Certified System Administrator</h5>
+                      <small class="fg-theme">Network Nuts, New Delhi</small>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>AWS Cloud Practitioner</h5>
+                      <small class="fg-theme">AWS Training & Certification</small>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <div class="title">2021</div>
+                    <div class="details">
+                      <h5>Microsoft Certified System Associate</h5>
+                      <small class="fg-theme">University of Colardo, Cybrary</small>
+                    </div>
+                  </li>
+            </ul>
+          </div>
+          
+          <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+            <h2 class="fg-dark">Experience</h2>
+            <ul class="timeline mt-4 pr-md-5">
+              <li>
+                <div class="title">Aug 2021 - Current</div>
+                <div class="details">
+                  <h5>Python/Django Developer</h5>
+                  <small class="fg-theme">Scimox Product and Services Pvt. Ltd. Lucknow</small>
+                  <p>I am working with ScimoX Product and Services Pvt. Ltd. as a Python/Django Developer since last Aug 2021,<p></p>
+                  I am responsible for creating reusable code and development with backend part of thr projects.<br>
+                I have completed 6 Python/Django based projects.<br>
+              <strong>1.Student Registration System<br>
+              2.Ecommerce Website<br>
+              3.Office Employee Management System<br>
+              4.Personal Portfolio<br>
+              5.Job Finder Website<br>
+              6.Website for Online Course </strong></p>
+                </div>
+              </li>
+              <li>
+                <div class="title">Jan 2020 to July 2021</div>
+                <div class="details">
+                  <h5>Technical Support Engineer</h5>
+                  <small class="fg-theme">Hitech Informatics Pvt. Ltd., Lucknow</small>
+                  <p>Working as Technical Support Engineer and my daily basis roles & responsibilities:<br>
+                  <strong>
+                    1. Configuration of User Profile, and Computers/Laptops.<br>
+                    2. Manage Active Directory Server.<br>
+                    3. Installation Operating System and Upgradation/Formating.<br>
+                    4. Manage Users and groups, Computers,Printer etc.<br>
+                    5. Manage and configuration Network printer.<br>
+                    6. Configuration of Redhat Server like Apache,FTP,Samba etc.<br>
+                    7. Apache hosting and virtual hosting.<br>
+                    8. Symantec Anti-virus Installation and configuration.<br>
+                    9. BitLocker and Group Policy with Services registry handle.<br>
+                    10. Working on AWS like: Create EC2 Instance, VPC, VPN, Private & Public Subnets, Autoscalling, Elastic Load Balancers,
+                        S3 bucket, NAT gateway etc.<br>
+                    11. Configuration of Microsoft outlook 2010, 2016 and create .PST as per user requirement<br>
+                    12. Working knowledge about Incident Management System.
+                    13. Troubleshoot daily basis technical problem facing by users and given solution on priority.<br>
+                    14. Take data backup and manage user profiles via Active Directory Server.<br>
+                    15. Create VMware Virtual Machine and Host server on VMs.<br>
+                    16. Create snapshot of virtual machine and debug the same.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="title">Oct 2019 to Dec 2019</div>
+                <div class="details">
+                  <h5>IT Executive Trainee</h5>
+                  <small class="fg-theme">DTDC Express Limited, Lucknow</small>
+                  <p>I am working here as a Trainee and at here my day to day Job responsibilities are:<br>
+                  <strong>
+                    1. Support to end-users and given solution them for IT related issues.<br>
+                    2. Installation and Upgradation/Formating the Operating Systems like: Windows7, Windows8.1, Windows10.<br>
+                    3. I have knowledge about varios type of Operating Systems:<br>
+                     Windows:Windows7,Windows8.1,Windows10 Pro.<br>
+                     Linux : Redhat 6, Redhat 7, Redhat 8.0, CentOS, Fedora, Ubuntu 20.0</p>
+                  </strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div> <!-- End resume -->
+    </div> <!-- End page about -->
+    
+    <!-- Page Service -->
+    <div class="vg-page page-service" id="services">
+      <h1 class="text-center wow fadeInUp">Services</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card card-body">
+              <div class="iconic">
+                <span class="ti-mouse-alt"></span>
+              </div>
+              <h4 class="fg-theme">Desktop/Technical Support</h4>
+              <p>To Be able to manage End-users, and given a solution for their IT releated issues like: OS Installation, Data Backup, Recovery, Microsoft Office Issue, Outlook, Network printer configuration and troubleshooting, Given onsite and remote support.</p>
+              <a href="#" class="btn btn-theme btn-rounded">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card card-body">
+              <div class="iconic">
+                <span class="ti-html5"></span>
+              </div>
+              <h4 class="fg-theme">Backend Development</h4>
+              <p>To be able to do work on Development backend part and write server side logic and validation for Users, and develop fully responsive website which is user freindly, User can create his own accounts and contact with us with help of contact form.User can use the website on any device like: Laptop, iPad,Andorid,iPhone</p>
+              <a href="#" class="btn btn-theme btn-rounded">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card card-body">
+              <div class="iconic">
+                <span class="ti-desktop"></span>
+              </div>
+              <h4 class="fg-theme">Web Development</h4>
+              <p>Develop a responsive website using a HTML, CSS, JavaScript and Bootstap.<br><br><br><br><br><br><br><br></p>
+              <a href="#" class="btn btn-theme btn-rounded">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End page services -->
+    
+    <!-- Testimonials -->
+    <div class="vg-page p-0" id="testimonial">
+      <div class="owl-carousel testi-carousel" style="background-image: url({% static '/assets/img/photo-2.jpg' %});">
+        <div class="item">
+          <p></p>
+          <span class="">
+            <span class=""></span>
+          </span>
+          <h4></h4>
+        </div>
+      </div>
+    </div> <!-- End testimonial -->
+    
+    <!-- Portfolio page -->
+    <div class="vg-page page-portfolio" id="portfolio">
+      <div class="container">
+        <div class="text-center wow fadeInUp">
+          <div class="badge badge-subhead">Project</div>
+        </div>
+        <h1 class="text-center fw-normal wow fadeInUp">See my Projects</h1>
+        <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+          <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+        </div>
+
+        <div class="gridder my-3">
+          <div class="grid-item apps wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/srs.jpg' %}" data-fancybox data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+              <img src="{% static '/assets/img/work/srs.jpg' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Student Registration System</h5>
+                <p>SRS</p></center>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item template wireframes wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/oems.png' %}" data-fancybox data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+              <img src="{% static '/assets/img/work/oems.png' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Office Employee Management System</h5>
+                <p>OEMS</p></center>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item apps ios wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/map.jpg' %}" data-fancybox data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+              <img src="{% static '/assets/img/work/map.jpg' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Web Map</h5>
+                <p>Webmap</p><center>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item graphic ui-ux wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/edu.png' %}" data-fancybox data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+              <img src="{% static '/assets/img/work/edu.png' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Institution Website</h5>
+                <p>Education-Website</p></center>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item apps ios wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/portfolio.jpg' %}" data-fancybox data-caption="<h5 class='fg-theme'>Personal Portfolio</h5> <p>Portfolio</p>">
+              <img src="{% static '/assets/img/work/portfolio.jpg' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Personal Portfolio</h5>
+                <p>Portfolio</p></center>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+            <div class="img-place" data-src="{% static '/assets/img/work/job.png' %}" data-fancybox data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+              <img src="{% static '/assets/img/work/job.png' %}" alt="">
+              <div class="img-caption">
+                <center><h5 class="fg-theme">Job Finder Website</h5>
+                <p>Job Finder</p></center>
+              </div>
+            </div>
+          </div>
+        </div> <!-- End gridder -->
+      </div>
+    </div> <!-- End Portfolio page -->
+    
+    {% comment %} <!-- Page Blog -->
+    <div class="vg-page page-blog" id="blog">
+      <h1 class="text-center fg-dark wow fadeInUp">Latest Post</h1>
+      <div class="container">
+        <div class="row post-grid">
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="{% static '/assets/img/work/work-9.jpg' %}" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Technology</a>
+                <a href="#" class="post-title">Invision design forward fund</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="{% static '/assets/img/work/work-6.jpg' %}" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Business</a>
+                <a href="#" class="post-title">Announcing a plan for small teams</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow fadeInUp">
+            <div class="card">
+              <div class="img-place">
+                <img src="{% static '/assets/img/work/work-1.jpg' %}" alt="">
+              </div>
+              <div class="caption">
+                <a href="javascript:void(0)" class="post-category">Design</a>
+                <a href="#" class="post-title">5 basic tips for illustrating</a>
+                <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center py-3 wow fadeInUp">
+            <a href="blog-minibar.html" class="btn btn-theme">See All Post</a>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End page blog -->
+     {% endcomment %}
+    <!-- Page Contact -->
+    <div class="vg-page page-contact" id="contact">
+      <h1 class="text-center fg-dark wow fadeInUp">Contact with me</h1>
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div class="col-lg-7 wow zoomIn">
+            <div class="vg-maps">
+              <div id="google-maps" style="width: 100%; height: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <form class="vg-contact-form" action="{% url 'contact' %}" method="post">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="col-12 wow fadeInUp">
+                  <input class="form-control" type="text" name="Name" placeholder="Your Name">
+                </div>
+                <div class="col-6 wow fadeInUp">
+                  <input class="form-control" type="text" name="Email" placeholder="Email Address">
+                </div>
+                <div class="col-6 wow fadeInUp">
+                  <input class="form-control" type="text" name="Subject" placeholder="Subject">
+                </div>
+                <div class="col-12 wow fadeInUp">
+                  <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+                </div>
+                <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End page contact -->
+    
+    <!-- Footer -->
+    <div class="vg-footer">
+      <h1 class="text-center">PortFolio</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 py-3">
+            <div class="footer-info">
+              <p>Contact with me</p>
+              <hr class="divider">
+              <p class="fs-large fg-white">Near Hotel Vikas Deep, Hussainganj Lucknow, Uttar Pradesh 226001.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p>Follow me</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Youtube</a></li>
+              </ul>
+            </div>
+          </div><br><br>
+          <div class="col-md-6 col-lg-3 py-3">
+            <div class="float-lg-right">
+              <p>Contact me</p>
+              <hr class="divider">
+              <ul class="list-unstyled">
+                <li>amit96kumar70@gmail.com</li>
+                <li>+91 9973660747</li>
+                <li>+91 7269074791</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+          <div class="col-12">
+            <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span class="ti-heart fg-theme-red"></span> by <a href="#">Aone IT Solution</a></p>
+          </div>
+        </div>
+      </div>
+    </div> <!-- End footer -->
+  </div> <!-- End main wrapper -->
+  
+  
+  <script src="{% static '/assets/js/jquery-3.5.1.min.js' %}"></script>
+  
+  <script src="{% static '/assets/js/bootstrap.bundle.min.js' %}"></script>
+  
+  <script src="{% static '/assets/vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+  
+  <script src="{% static '/assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js' %}"></script>
+  
+  <script src="{% static '/assets/vendor/isotope/isotope.pkgd.min.js' %}"></script>
+  
+  <script src="{% static '/assets/vendor/nice-select/js/jquery.nice-select.min.js' %}"></script>
+  
+  <script src="{% static '/assets/vendor/fancybox/js/jquery.fancybox.min.js' %}"></script>
+
+  <script src="{% static '/assets/vendor/wow/wow.min.js' %}"></script>
+
+  <script src="{% static '/assets/vendor/animateNumber/jquery.animateNumber.min.js' %}"></script>
+
+  <script src="{% static '/assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  
+  <script src="{% static '/assets/js/google-maps.js' %}"></script>
+  
+  <script src="{% static '/assets/js/minibar-virtual.js' %}"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+
+</body>
+</html>
